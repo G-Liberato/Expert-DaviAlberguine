@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   MessageCircle, 
   CheckCircle2, 
@@ -18,7 +18,7 @@ import {
   Maximize2
 } from 'lucide-react';
 
-const WHATSAPP_URL = "https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2F7GNWPLKR6DN5F1%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnEn0_FV_58tj9eAM0A3kuQGWI4naSDqVrj-TIHkK9_-4iQtCF1ig62ozBX7U_aem_it5yC0U22USfSaIWh9EXaQ&e=AT5COgfLLkgjWs6JZWJU9PKMa2EADWEIMnWPiesLCILSZanYESUUSjxz7hO8LPYoB_Hu4_iWwsYh5mUAi_8SM1z1h2mesOSAwX8xxzd7ew";
+const WHATSAPP_URL = "https://wa.me/message/7GNWPLKR6DN5F1";
 const INSTAGRAM_URL = "https://www.instagram.com/p/DVEHukLERw9/";
 
 const RESULTS_IMAGES = [
