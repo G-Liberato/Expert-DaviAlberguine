@@ -35,8 +35,8 @@ const RESULTS_IMAGES = [
 ];
 
 const EXPERT_PHOTOS = [
-  "https://i.imgur.com/QS0a25c.jpeg",
-  "https://i.imgur.com/sNIj2tw.png"
+  "https://i.imgur.com/lneg7To.jpeg",
+  "https://i.imgur.com/zjnLm0a.png"
 ];
 
 const WhatsAppButton = ({ className = "", text = "Agendar primeira consulta gratuita no WhatsApp" }) => (
@@ -63,7 +63,7 @@ export default function App() {
         {/* Background Image with Gradient Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://i.imgur.com/sNIj2tw.png" 
+            src="https://i.imgur.com/zjnLm0a.png" 
             alt="Dr. Davi Alberguine" 
             className="w-full h-full object-cover object-top opacity-80"
             referrerPolicy="no-referrer"
@@ -107,7 +107,7 @@ export default function App() {
           >
             <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
               <img 
-                src="https://i.imgur.com/QS0a25c.jpeg" 
+                src="https://i.imgur.com/lneg7To.jpeg" 
                 alt="Dr. Davi Alberguine em atendimento" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -280,7 +280,7 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="aspect-video rounded-2xl overflow-hidden border border-white/10">
               <img 
-                src="https://i.imgur.com/QS0a25c.jpeg" 
+                src="https://i.imgur.com/lneg7To.jpeg" 
                 alt="Atendimento personalizado" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -288,7 +288,7 @@ export default function App() {
             </div>
             <div className="aspect-video rounded-2xl overflow-hidden border border-white/10">
               <img 
-                src="https://i.imgur.com/sNIj2tw.png" 
+                src="https://i.imgur.com/zjnLm0a.png" 
                 alt="Dr. Davi Alberguine" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -311,7 +311,15 @@ export default function App() {
             <p className="text-xl text-gray-300 mb-10">
               Não adie mais a transformação que você merece. A primeira consulta é por minha conta.
             </p>
-            <WhatsAppButton className="mx-auto scale-110" />
+            <a 
+              href="https://tabeladavialberguine.vercel.app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-gold hover:bg-gold/80 text-black font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg shadow-gold/20 flex items-center justify-center gap-2 text-center mx-auto scale-110 w-fit"
+            >
+              <span>Consulte os nossos preços</span>
+              <ChevronRight className="w-5 h-5" />
+            </a>
             <div className="mt-8 flex items-center justify-center gap-6 text-gray-400">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-gold" />
