@@ -84,7 +84,7 @@ export default function App() {
             Eu sou <span className="italic text-gold">Davi Alberguine</span>, seu especialista em sorrisos em Butantã.
           </h1>
           <p className="text-lg text-gray-300 mb-8 max-w-md mx-auto">
-            Transformando vidas através da Reabilitação Oral Estética e Laminados Cerâmicos de alta precisão.
+            Transformando vidas através de Próteses, Reabilitação Oral Estética e Laminados Cerâmicos de alta precisão.
           </p>
           
           <div className="space-y-4">
@@ -130,10 +130,10 @@ export default function App() {
             </p>
             <ul className="space-y-4">
               {[
-                "Especialista em Reabilitação Oral Estética",
+                "Especialista em Reabilitação Oral Estética com próteses ",
+                "Estética 100% Natural",
                 "Referência em Laminados Cerâmicos",
-                "Atendimento personalizado e humano",
-                "Tecnologia de ponta em Butantã"
+                "Tecnologia de ponta perto do seu consultório "
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-gold shrink-0" />
@@ -191,32 +191,32 @@ export default function App() {
               {
                 icon: <ShieldCheck className="w-8 h-8 text-gold" />,
                 title: "Avaliação Honesta",
-                desc: "Diagnósticos precisos focados no que você realmente precisa para um sorriso saudável."
+                desc: "Diagnósticos precisos focados no que realmente precisa para um sorriso saudável."
               },
               {
                 icon: <MessageCircle className="w-8 h-8 text-gold" />,
                 title: "Atendimento Direto",
-                desc: "Comunicação clara e sem termos técnicos complicados. Você entende cada passo."
+                desc: "Atendimento direto com especialista em próteses dentárias, com agilidade, precisão e cuidado em cada detalhe."
               },
               {
                 icon: <Star className="w-8 h-8 text-gold" />,
                 title: "Foco no Resultado",
-                desc: "Busca incessante pela perfeição estética aliada à funcionalidade biológica."
+                desc: "Busca incessante pela perfeição estética aliada à funcionalidade biológica de suas próteses ."
               },
               {
                 icon: <MapPin className="w-8 h-8 text-gold" />,
                 title: "Localização Premium",
-                desc: "Consultório moderno e confortável no coração de Butantã - SP."
+                desc: "Laboratório moderno e confiável no coração de Butantã - SP."
               },
               {
                 icon: <Clock className="w-8 h-8 text-gold" />,
                 title: "Pontualidade",
-                desc: "Respeito total ao seu tempo com agendamentos organizados e sem esperas."
+                desc: "Respeito total ao seu tempo com agendamentos e prazos."
               },
               {
                 icon: <CheckCircle2 className="w-8 h-8 text-gold" />,
-                title: "Pós-Procedimento",
-                desc: "Acompanhamento dedicado para garantir a longevidade do seu novo sorriso."
+                title: "Agilidade",
+                desc: "Agilidade nos serviços, sem abrir mão da perfeição em cada detalhe."
               }
             ].map((card, i) => (
               <motion.div 
@@ -242,7 +242,7 @@ export default function App() {
         <div className="max-w-2xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold">Sua jornada para o sorriso dos sonhos começa aqui.</h2>
           <p className="text-gray-300">
-            Agende agora sua primeira avaliação gratuita. Sem compromisso, apenas uma conversa clara sobre seus objetivos.
+            Agende agora sua primeira avaliação . Sem compromisso, apenas uma conversa clara sobre seus objetivos e de seus pacientes.
           </p>
           <WhatsAppButton className="mx-auto" />
         </div>
@@ -258,8 +258,8 @@ export default function App() {
             
             {[
               { step: "01", title: "WhatsApp", desc: "Clique no botão e envie uma mensagem para nossa equipe." },
-              { step: "02", title: "Agendamento", desc: "Escolha o melhor horário para sua consulta em Butantã." },
-              { step: "03", title: "Avaliação", desc: "Realizamos sua primeira consulta gratuita e planejamos seu caso." }
+              { step: "02", title: "Agendamento", desc: "Escolha o melhor horário para conversarmos sobre seus objetivos e de seus pacientes." },
+              { step: "03", title: "Resultado", desc: "Realizaremos a avaliação do seu cliente e planejaremos os melhores métodos para o melhor resultado" }
             ].map((item, i) => (
               <div key={i} className="text-center space-y-4">
                 <div className="w-16 h-16 rounded-full bg-gold text-premium-black font-bold text-2xl flex items-center justify-center mx-auto shadow-lg shadow-gold/20">
