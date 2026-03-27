@@ -36,10 +36,10 @@ const RESULTS_IMAGES = [
 
 const EXPERT_PHOTOS = [
   "https://i.imgur.com/lneg7To.jpeg",
-  "https://i.imgur.com/zjnLm0a.png"
+  "https://i.imgur.com/O5bi1G0.png"
 ];
 
-const WhatsAppButton = ({ className = "", text = "Agendar primeira consulta gratuita no WhatsApp" }) => (
+const WhatsAppButton = ({ className = "", text = "Agendar consulta" }) => (
   <a 
     href={WHATSAPP_URL} 
     target="_blank" 
@@ -56,15 +56,15 @@ export default function App() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <div className="min-h-screen selection:bg-gold selection:text-black overflow-x-hidden">
+    <div className="min-h-screen selection:bg-gold selection:text-premium-black overflow-x-hidden">
       
       {/* 1. HERO SECTION */}
       <section id="hero" className="relative min-h-[90vh] flex flex-col items-center justify-end pt-20 pb-12 px-6 overflow-hidden">
         {/* Background Image with Gradient Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://i.imgur.com/zjnLm0a.png" 
-            alt="Dr. Davi Alberguine" 
+            src="https://i.imgur.com/O5bi1G0.png" 
+            alt="Davi Alberguine" 
             className="w-full h-full object-cover object-top opacity-80"
             referrerPolicy="no-referrer"
           />
@@ -78,10 +78,10 @@ export default function App() {
           className="relative z-10 w-full max-w-xl text-center"
         >
           <span className="inline-block px-4 py-1 mb-4 text-xs font-semibold tracking-widest uppercase border border-white/20 rounded-full glass">
-            Alphaville - SP
+            Butantã - SP
           </span>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            Eu sou <span className="italic text-gold">Dr. Davi Alberguine</span>, seu especialista em sorrisos em Alphaville.
+            Eu sou <span className="italic text-gold">Davi Alberguine</span>, seu especialista em sorrisos em Butantã.
           </h1>
           <p className="text-lg text-gray-300 mb-8 max-w-md mx-auto">
             Transformando vidas através da Reabilitação Oral Estética e Laminados Cerâmicos de alta precisão.
@@ -108,7 +108,7 @@ export default function App() {
             <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
               <img 
                 src="https://i.imgur.com/lneg7To.jpeg" 
-                alt="Dr. Davi Alberguine em atendimento" 
+                alt="Davi Alberguine em atendimento" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -126,14 +126,14 @@ export default function App() {
           >
             <h2 className="text-3xl font-bold">Autoridade e Dedicação</h2>
             <p className="text-gray-300 leading-relaxed">
-              Minha missão é devolver não apenas a estética, mas a confiança e a funcionalidade que um sorriso perfeito proporciona. Com anos de experiência em Alphaville, foco em resultados naturais e duradouros.
+              Minha missão é devolver não apenas a estética, mas a confiança e a funcionalidade que um sorriso perfeito proporciona. Com anos de experiência em Butantã, foco em resultados naturais e duradouros.
             </p>
             <ul className="space-y-4">
               {[
                 "Especialista em Reabilitação Oral Estética",
                 "Referência em Laminados Cerâmicos",
                 "Atendimento personalizado e humano",
-                "Tecnologia de ponta em Alphaville"
+                "Tecnologia de ponta em Butantã"
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-gold shrink-0" />
@@ -170,7 +170,7 @@ export default function App() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <div className="absolute inset-0 bg-premium-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <Maximize2 className="text-white w-6 h-6" />
                 </div>
               </motion.div>
@@ -206,7 +206,7 @@ export default function App() {
               {
                 icon: <MapPin className="w-8 h-8 text-gold" />,
                 title: "Localização Premium",
-                desc: "Consultório moderno e confortável no coração de Alphaville - SP."
+                desc: "Consultório moderno e confortável no coração de Butantã - SP."
               },
               {
                 icon: <Clock className="w-8 h-8 text-gold" />,
@@ -258,11 +258,11 @@ export default function App() {
             
             {[
               { step: "01", title: "WhatsApp", desc: "Clique no botão e envie uma mensagem para nossa equipe." },
-              { step: "02", title: "Agendamento", desc: "Escolha o melhor horário para sua consulta em Alphaville." },
+              { step: "02", title: "Agendamento", desc: "Escolha o melhor horário para sua consulta em Butantã." },
               { step: "03", title: "Avaliação", desc: "Realizamos sua primeira consulta gratuita e planejamos seu caso." }
             ].map((item, i) => (
               <div key={i} className="text-center space-y-4">
-                <div className="w-16 h-16 rounded-full bg-gold text-black font-bold text-2xl flex items-center justify-center mx-auto shadow-lg shadow-gold/20">
+                <div className="w-16 h-16 rounded-full bg-gold text-premium-black font-bold text-2xl flex items-center justify-center mx-auto shadow-lg shadow-gold/20">
                   {item.step}
                 </div>
                 <h3 className="text-xl font-bold">{item.title}</h3>
@@ -288,8 +288,8 @@ export default function App() {
             </div>
             <div className="aspect-video rounded-2xl overflow-hidden border border-white/10">
               <img 
-                src="https://i.imgur.com/zjnLm0a.png" 
-                alt="Dr. Davi Alberguine" 
+                src="https://i.imgur.com/O5bi1G0.png" 
+                alt="Davi Alberguine" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -307,15 +307,12 @@ export default function App() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Pronto para sorrir com confiança?</h2>
-            <p className="text-xl text-gray-300 mb-10">
-              Não adie mais a transformação que você merece. A primeira consulta é por minha conta.
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-10">Pronto para sorrir com confiança?</h2>
             <a 
               href="https://tabeladavialberguine.vercel.app" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-gold hover:bg-gold/80 text-black font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg shadow-gold/20 flex items-center justify-center gap-2 text-center mx-auto scale-110 w-fit"
+              className="bg-gold hover:bg-gold/80 text-premium-black font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg shadow-gold/20 flex items-center justify-center gap-2 text-center mx-auto scale-110 w-fit"
             >
               <span>Consulte os nossos preços</span>
               <ChevronRight className="w-5 h-5" />
@@ -338,12 +335,12 @@ export default function App() {
       <footer className="py-12 px-6 border-t border-white/5 bg-premium-black">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-serif font-bold text-gold">Dr. Davi Alberguine</h3>
+            <h3 className="text-xl font-serif font-bold text-gold">Davi Alberguine</h3>
             <p className="text-sm text-gray-500 mt-1">
               Especializado em Reabilitação Oral Estética & Laminados Cerâmicos
             </p>
             <p className="text-xs text-gray-600 mt-2 flex items-center justify-center md:justify-start gap-1">
-              <MapPin className="w-3 h-3" /> Alphaville - SP
+              <MapPin className="w-3 h-3" /> Butantã - SP
             </p>
           </div>
 
@@ -357,7 +354,7 @@ export default function App() {
           </div>
 
           <p className="text-xs text-gray-600">
-            © {new Date().getFullYear()} Dr. Davi Alberguine. Todos os direitos reservados.
+            © {new Date().getFullYear()} Davi Alberguine. Todos os direitos reservados.
           </p>
         </div>
       </footer>
@@ -369,7 +366,7 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 md:p-12"
+            className="fixed inset-0 z-[100] bg-premium-black/95 flex items-center justify-center p-4 md:p-12"
             onClick={() => setSelectedImage(null)}
           >
             <button 
