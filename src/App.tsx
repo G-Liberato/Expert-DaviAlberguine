@@ -39,7 +39,7 @@ const EXPERT_PHOTOS = [
   "https://i.imgur.com/O5bi1G0.png"
 ];
 
-const WhatsAppButton = ({ className = "", text = "Agendar consulta" }) => (
+const WhatsAppButton = ({ className = "", text = "Agendar avaliação" }) => (
   <a 
     href={WHATSAPP_URL} 
     target="_blank" 
