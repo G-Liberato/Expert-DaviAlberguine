@@ -39,7 +39,7 @@ const EXPERT_PHOTOS = [
   "https://i.imgur.com/O5bi1G0.png"
 ];
 
-const WhatsAppButton = ({ className = "", text = "Agendar avaliação" }) => (
+const WhatsAppButton = ({ className = "", text = "Converse com um dos nossos Especialistas" }) => (
   <a 
     href={WHATSAPP_URL} 
     target="_blank" 
@@ -81,17 +81,14 @@ export default function App() {
             Butantã - SP
           </span>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            Eu sou <span className="italic text-gold">Davi Alberguine</span>, seu especialista em sorrisos em Butantã.
+            Eu sou Davi CEO do <span className="italic text-gold">Alberguine Estúdio Dental</span> referência em próteses dentárias no Brasil 
           </h1>
           <p className="text-lg text-gray-300 mb-8 max-w-md mx-auto">
-            Transformando vidas através de Próteses, Reabilitação Oral Estética e Laminados Cerâmicos de alta precisão.
+            Entregando trabalhos de excelência em vários consultórios pelo brasil há anos. Seus pacientes poderão contar com os melhores Laminados Cerâmicos de alta precisão do mercado.
           </p>
           
           <div className="space-y-4">
             <WhatsAppButton />
-            <p className="text-sm text-gray-400 flex items-center justify-center gap-2">
-              <Clock className="w-4 h-4" /> Resposta rápida • Sem compromisso
-            </p>
           </div>
         </motion.div>
       </section>
@@ -126,12 +123,11 @@ export default function App() {
           >
             <h2 className="text-3xl font-bold">Autoridade e Dedicação</h2>
             <p className="text-gray-300 leading-relaxed">
-              Minha missão é devolver não apenas a estética, mas a confiança e a funcionalidade que um sorriso perfeito proporciona. Com anos de experiência em Butantã, foco em resultados naturais e duradouros.
+              Tenho 31 anos, desde o início da minha jornada sempre fui obcecado por detalhes. Porque é no detalhe que mora a excelência que sempre buscamos. O Alberguine Estúdio Dental nasceu de anos de estudo, prática intensa e acima de tudo, amor pelo que faço. Cada ajuste, cada finalização carrega mais do que técnica... Carrega propósito. Com anos de experiência em em próteses tendo trabalhado com centenas de consultórios pelo Brasil inteiro sempre atras da perfeição.
             </p>
             <ul className="space-y-4">
               {[
-                "Especialista em Reabilitação Oral Estética com próteses ",
-                "Estética 100% Natural",
+                "Estética e funcionalidade 100% Natural",
                 "Referência em Laminados Cerâmicos",
                 "Tecnologia de ponta perto do seu consultório "
               ].map((item, i) => (
@@ -150,7 +146,6 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Resultados Reais</h2>
-            <p className="text-gray-400">Transformações que renovam a autoestima de nossos pacientes.</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -186,13 +181,8 @@ export default function App() {
       <section className="py-20 px-6 bg-premium-gray">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Diferenciais de Excelência</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              {
-                icon: <ShieldCheck className="w-8 h-8 text-gold" />,
-                title: "Avaliação Honesta",
-                desc: "Diagnósticos precisos focados no que realmente precisa para um sorriso saudável."
-              },
               {
                 icon: <MessageCircle className="w-8 h-8 text-gold" />,
                 title: "Atendimento Direto",
@@ -202,11 +192,6 @@ export default function App() {
                 icon: <Star className="w-8 h-8 text-gold" />,
                 title: "Foco no Resultado",
                 desc: "Busca incessante pela perfeição estética aliada à funcionalidade biológica de suas próteses ."
-              },
-              {
-                icon: <MapPin className="w-8 h-8 text-gold" />,
-                title: "Localização Premium",
-                desc: "Laboratório moderno e confiável no coração de Butantã - SP."
               },
               {
                 icon: <Clock className="w-8 h-8 text-gold" />,
@@ -240,9 +225,9 @@ export default function App() {
       <section className="py-20 px-6 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gold/5 blur-3xl rounded-full -z-10" />
         <div className="max-w-2xl mx-auto space-y-8">
-          <h2 className="text-3xl font-bold">Sua jornada para o sorriso dos sonhos começa aqui.</h2>
+          <h2 className="text-3xl font-bold"> A jornada para a perfeição das próteses do seu consultório começa aqui.</h2>
           <p className="text-gray-300">
-            Agende agora sua primeira avaliação . Sem compromisso, apenas uma conversa clara sobre seus objetivos e de seus pacientes.
+            Confira nossos valores na tabela abaixo. Qualquer duvida pode estar entrando em contato com um de nossos profissionais .
           </p>
           <WhatsAppButton className="mx-auto" />
         </div>
@@ -307,7 +292,7 @@ export default function App() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-10">Pronto para sorrir com confiança?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-10"> Confira nossos valores !</h2>
             <a 
               href="https://tabeladavialberguine.vercel.app" 
               target="_blank" 
