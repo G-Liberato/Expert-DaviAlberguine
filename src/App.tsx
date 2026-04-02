@@ -15,11 +15,14 @@ import {
   Instagram, 
   ChevronRight,
   X,
-  Maximize2
+  Maximize2,
+  Target,
+  Eye,
+  Award
 } from 'lucide-react';
 
 const WHATSAPP_URL = "https://wa.me/message/7GNWPLKR6DN5F1";
-const INSTAGRAM_URL = "https://www.instagram.com/p/DVEHukLERw9/";
+const INSTAGRAM_URL = "https://www.instagram.com/davi_alberguine/";
 
 const RESULTS_IMAGES = [
   "https://i.imgur.com/H1PlMn2.jpeg",
@@ -59,36 +62,107 @@ export default function App() {
     <div className="min-h-screen selection:bg-gold selection:text-premium-black overflow-x-hidden">
       
       {/* 1. HERO SECTION */}
-      <section id="hero" className="relative min-h-[90vh] flex flex-col items-center justify-end pt-20 pb-12 px-6 overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
         {/* Background Image with Gradient Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://i.imgur.com/O5bi1G0.png" 
             alt="Davi Alberguine" 
-            className="w-full h-full object-cover object-top opacity-80"
+            className="w-full h-full object-cover object-top opacity-60"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-premium-black via-premium-black/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-premium-black via-premium-black/60 to-transparent" />
         </div>
 
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative z-10 w-full max-w-xl text-center"
+          className="relative z-10 w-full max-w-2xl text-center"
         >
           <span className="inline-block px-4 py-1 mb-4 text-xs font-semibold tracking-widest uppercase border border-white/20 rounded-full glass">
             Butantã - SP
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            Eu sou Davi CEO do <span className="italic text-gold">Alberguine Estúdio Dental</span> referência em próteses dentárias no Brasil 
+          <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+            Eu sou Davi <br /> Técnico responsável pelo <span className="italic text-gold">Alberguine Estúdio Dental</span>.
           </h1>
-          <p className="text-lg text-gray-300 mb-8 max-w-md mx-auto">
-            Entregando trabalhos de excelência em vários consultórios pelo brasil há anos. Seus pacientes poderão contar com os melhores Laminados Cerâmicos de alta precisão do mercado.
-          </p>
           
-          <div className="space-y-4">
+          <div className="space-y-4 mb-16">
             <WhatsAppButton />
+          </div>
+
+          <div className="text-left space-y-10 glass p-8 md:p-10 rounded-3xl border border-white/10 backdrop-blur-xl shadow-2xl">
+            <div className="space-y-3">
+              <h3 className="text-gold font-bold tracking-[0.2em] text-sm uppercase flex items-center gap-3">
+                <Target className="w-4 h-4" /> MISSÃO
+              </h3>
+              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+                Transformar cada trabalho em uma peça de excelência absoluta, unindo arte, precisão e tecnologia, para entregar resultados previsíveis, funcionais e esteticamente impecáveis aos nossos parceiros.
+              </p>
+            </div>
+            
+            <div className="flex justify-center text-gold/30 font-light tracking-widest">⸻</div>
+
+            <div className="space-y-3">
+              <h3 className="text-gold font-bold tracking-[0.2em] text-sm uppercase flex items-center gap-3">
+                <Eye className="w-4 h-4" /> VISÃO
+              </h3>
+              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+                Ser referência no Brasil em prótese dentária de alto padrão, reconhecido não apenas pela tecnologia, mas pelo nível de detalhe, consistência e compromisso inegociável com a excelência.
+              </p>
+            </div>
+
+            <div className="flex justify-center text-gold/30 font-light tracking-widest">⸻</div>
+
+            <div className="space-y-6">
+              <h3 className="text-gold font-bold tracking-[0.2em] text-sm uppercase flex items-center gap-3">
+                <Award className="w-4 h-4" /> VALORES
+              </h3>
+              <div className="grid gap-6">
+                <div className="space-y-1">
+                  <h4 className="text-white font-bold flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-gold"></div>
+                    Excelência como padrão
+                  </h4>
+                  <p className="text-gray-400 text-sm pl-3.5">Não buscamos o suficiente. Buscamos o impecável.</p>
+                </div>
+                <div className="space-y-1">
+                  <h4 className="text-white font-bold flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-gold"></div>
+                    Precisão em cada detalhe
+                  </h4>
+                  <p className="text-gray-400 text-sm pl-3.5">Cada ajuste, cada milímetro, cada acabamento importa.</p>
+                </div>
+                <div className="space-y-1">
+                  <h4 className="text-white font-bold flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-gold"></div>
+                    Tecnologia a favor da perfeição
+                  </h4>
+                  <p className="text-gray-400 text-sm pl-3.5">Utilizamos o que há de mais avançado para garantir previsibilidade — mas a entrega final é humana, técnica e artística.</p>
+                </div>
+                <div className="space-y-1">
+                  <h4 className="text-white font-bold flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-gold"></div>
+                    Compromisso com prazos e parceiros
+                  </h4>
+                  <p className="text-gray-400 text-sm pl-3.5">Pontualidade e responsabilidade fazem parte da nossa assinatura.</p>
+                </div>
+                <div className="space-y-1">
+                  <h4 className="text-white font-bold flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-gold"></div>
+                    Comunicação clara e profissional
+                  </h4>
+                  <p className="text-gray-400 text-sm pl-3.5">Relacionamentos duradouros se constroem com transparência.</p>
+                </div>
+                <div className="space-y-1">
+                  <h4 className="text-white font-bold flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-gold"></div>
+                    Evolução constante
+                  </h4>
+                  <p className="text-gray-400 text-sm pl-3.5">Nunca paramos. Estamos sempre elevando o nível</p>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
       </section>
@@ -123,17 +197,19 @@ export default function App() {
           >
             <h2 className="text-3xl font-bold">Autoridade e Dedicação</h2>
             <p className="text-gray-300 leading-relaxed">
-              Tenho 31 anos, desde o início da minha jornada sempre fui obcecado por detalhes. Porque é no detalhe que mora a excelência que sempre buscamos. O Alberguine Estúdio Dental nasceu de anos de estudo, prática intensa e acima de tudo, amor pelo que faço. Cada ajuste, cada finalização carrega mais do que técnica... Carrega propósito. Com anos de experiência em em próteses tendo trabalhado com centenas de consultórios pelo Brasil inteiro sempre atras da perfeição.
+              Desde o início da minha jornada sempre fui obcecado por detalhes. Porque é no detalhe que mora a excelência que sempre buscamos. O Alberguine Estúdio Dental nasceu de anos de estudo, prática intensa e acima de tudo, amor pelo que faço. Cada ajuste, cada finalização carrega mais do que técnica... Carrega propósito. Com anos de experiência em em próteses tendo trabalhado com centenas de consultórios pelo Brasil inteiro sempre atras da perfeição.
             </p>
             <ul className="space-y-4">
               {[
-                "Estética e funcionalidade 100% Natural",
-                "Referência em Laminados Cerâmicos",
-                "Tecnologia de ponta perto do seu consultório "
+                "ARTE",
+                "PRECISÃO",
+                "TECNOLOGIA",
+                "PONTUALIDADE",
+                "COMUNICAÇÃO"
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-gold shrink-0" />
-                  <span className="text-gray-200">{item}</span>
+                  <Star className="w-6 h-6 text-gold shrink-0" />
+                  <span className="text-gray-200 font-bold tracking-wider">{item}</span>
                 </li>
               ))}
             </ul>
@@ -244,7 +320,7 @@ export default function App() {
             {[
               { step: "01", title: "WhatsApp", desc: "Clique no botão e envie uma mensagem para nossa equipe." },
               { step: "02", title: "Agendamento", desc: "Escolha o melhor horário para conversarmos sobre seus objetivos e de seus pacientes." },
-              { step: "03", title: "Resultado", desc: "Realizaremos a avaliação do seu cliente e planejaremos os melhores métodos para o melhor resultado" }
+              { step: "03", title: "Resultado", desc: "Agora os resultados incríveis estão sendo preparados. Aguarde e surpreenda-se" }
             ].map((item, i) => (
               <div key={i} className="text-center space-y-4">
                 <div className="w-16 h-16 rounded-full bg-gold text-premium-black font-bold text-2xl flex items-center justify-center mx-auto shadow-lg shadow-gold/20">
@@ -262,8 +338,8 @@ export default function App() {
       <section className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Bastidores e Atendimento</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="aspect-video rounded-2xl overflow-hidden border border-white/10">
+          <div className="flex justify-center">
+            <div className="w-full max-w-3xl aspect-video rounded-2xl overflow-hidden border border-white/10">
               <img 
                 src="https://i.imgur.com/lneg7To.jpeg" 
                 alt="Atendimento personalizado" 
@@ -271,16 +347,12 @@ export default function App() {
                 referrerPolicy="no-referrer"
               />
             </div>
-            <div className="aspect-video rounded-2xl overflow-hidden border border-white/10">
-              <img 
-                src="https://i.imgur.com/O5bi1G0.png" 
-                alt="Davi Alberguine" 
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-            </div>
           </div>
-          <p className="text-center text-gray-400 mt-6 italic">"Cada paciente é único, cada sorriso é uma obra de arte."</p>
+          <p className="text-center text-gray-400 mt-6 italic">
+            Feito para quem exige o extraordinário.<br />
+            A excelência não é um resultado, é a nossa essência.<br />
+            Alberguine Estúdio Dental
+          </p>
         </div>
       </section>
 
