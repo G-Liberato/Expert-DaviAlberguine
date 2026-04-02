@@ -319,7 +319,7 @@ export default function App() {
             
             {[
               { step: "01", title: "WhatsApp", desc: "Clique no botão e envie uma mensagem para nossa equipe." },
-              { step: "02", title: "Agendamento", desc: "Escolha o melhor horário para conversarmos sobre seus objetivos e de seus pacientes." },
+              { step: "02", title: "Agendamento", desc: "Escolha o melhor horário para conversarmos e apresentamos nosso protocolo de trabalho e padrão excelência de atendimento do Alberguine Estúdio." },
               { step: "03", title: "Resultado", desc: "Agora os resultados incríveis estão sendo preparados. Aguarde e surpreenda-se" }
             ].map((item, i) => (
               <div key={i} className="text-center space-y-4">
