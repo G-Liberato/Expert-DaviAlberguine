@@ -42,7 +42,7 @@ const EXPERT_PHOTOS = [
   "https://i.imgur.com/O5bi1G0.png"
 ];
 
-const WhatsAppButton = ({ className = "", text = "Converse com um dos nossos Especialistas" }) => (
+const WhatsAppButton = ({ className = "", text = "Clique aqui e Converse com Davi Alberguine !" }) => (
   <a 
     href={WHATSAPP_URL} 
     target="_blank" 
@@ -303,7 +303,7 @@ export default function App() {
         <div className="max-w-2xl mx-auto space-y-8">
           <h2 className="text-3xl font-bold"> A jornada para a perfeição das próteses do seu consultório começa aqui.</h2>
           <p className="text-gray-300">
-            Confira nossos valores na tabela abaixo. Qualquer duvida pode estar entrando em contato com um de nossos profissionais .
+            Entre em contato para saber mais sobre nossos serviços e valores. Qualquer dúvida, estamos à disposição.
           </p>
           <WhatsAppButton className="mx-auto" />
         </div>
@@ -353,38 +353,6 @@ export default function App() {
             A excelência não é um resultado, é a nossa essência.<br />
             Alberguine Estúdio Dental
           </p>
-        </div>
-      </section>
-
-      {/* 8. CTA FINAL */}
-      <section className="py-24 px-6 bg-gradient-to-b from-premium-black to-premium-gray">
-        <div className="max-w-3xl mx-auto text-center space-y-10">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-10"> Confira nossos valores !</h2>
-            <a 
-              href="https://tabeladavialberguine.vercel.app" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-gold hover:bg-gold/80 text-premium-black font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg shadow-gold/20 flex items-center justify-center gap-2 text-center mx-auto scale-110 w-fit"
-            >
-              <span>Consulte os nossos preços</span>
-              <ChevronRight className="w-5 h-5" />
-            </a>
-            <div className="mt-8 flex items-center justify-center gap-6 text-gray-400">
-              <div className="flex items-center gap-2">
-                <ShieldCheck className="w-5 h-5 text-gold" />
-                <span className="text-sm">Ambiente Seguro</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-gold" />
-                <span className="text-sm">Alta Tecnologia</span>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </section>
 
